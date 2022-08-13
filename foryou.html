@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <title>For u're Birthday🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon-love.png" type="image/x-icon">
+</head>
+
+<body class="body">
+    <audio class="audio" src="backsound.mp3" autoplay type="audio" loop=""></audio>
+    <div class="open">
+        <div class="card">
+            <h2>i have a message for u.</h2>
+            <img onclick="mulai()" src="mail-love.png" alt="" srcset="" />
+            <h3>press to open it.</h3>
+        </div>
+    </div>
+    <div class="atas" id="atas">
+        <img onclick="mulai()" src="stiker-ultah.png" alt="" />
+        <h2>scroll down okay ? </h2>
+    </div>
+
+    <p data-aos="zoom-in">By The Way Happy Birthday For u :)</p>
+    <p data-aos="zoom-in">i hope this year will be better than last year.</p>
+    <p data-aos="zoom-in">and also don't forget to always be given health and given a long life, so that you can make the people you love happy.</p>
+    <p data-aos="zoom-in">for the last time I just want to say, I love you, and also sorry this gift from me is only limited to this.
+    </p>
+
+    <p data-aos="zoom-in">please press the heart button.
+        <i onclick="tanya()" class="material-icons-sharp"> favorite </i>
+    </p>
+
+    <script>
+        var musik = "";
+    </script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script>
+        var audio = document.querySelector(".audio");
+        if (musik) {
+            audio.src = musik;
+        }
+
+        function mulai() {
+            audio.play();
+            document.querySelector(".open").style = "opacity: 0;";
+            document.querySelector(".body").style = "overflow-y: scroll;";
+            setTimeout(function() {
+                document.querySelector(".open").style.display = "none";
+            }, 1000);
+        }
+
+        function wa(isi) {
+            window.open("https://api.whatsapp.com/send?text= thank you for remembering my birthday, i just wanna say,  " + isi);
+        }
+        async function tanya() {
+            var {
+                value: kado
+            } = await swal.fire({
+                title: "is there a message you want to convey to me?",
+                input: "text",
+                showCancelButton: false,
+            });
+            if (kado) {
+                await swal.fire("Send the answer to my whatsapp okay.");
+                wa(kado);
+            } else {
+                await swal.fire("don't leave the answer blank😡 ");
+                tanya();
+            }
+        }
+    </script>
+    <p class="wm"><span><a href="https://github.com/rivaannn">Copyright playwithshadow</a></span></p>
+</body>
+
+</html>
