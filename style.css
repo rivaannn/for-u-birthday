@@ -11,7 +11,7 @@ html {
 
 body {
   background: wheat;
-  background-image: url("image5.jpg");
+  background-image: url("image1.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -19,7 +19,7 @@ body {
 }
 
 .open {
-  background-image: url("image4.jpg");
+  background-image: url("image2.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
