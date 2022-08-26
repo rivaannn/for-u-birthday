@@ -4,7 +4,7 @@ AOS.init({
   once: true,
 });
 
-var audio = document.querySelector("audio");
+var audio = document.querySelector(".audio");
 if (musik) {
   audio.src = musik;
 }
