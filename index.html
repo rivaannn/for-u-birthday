@@ -14,15 +14,20 @@
     <title>For u're Birthday🎂</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icon-love.png" type="image/x-icon">
+    <!-- SimplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
 </head>
 
 <body class="body">
     <audio class="audio" src="mp3/backsound.mp3" autoplay type="audio" loop=""></audio>
     <div class="open">
         <div class="card">
-            <h2>i have a message for u.</h2>
-            <img onclick="mulai()" src="img/mail-love.png" alt="" srcset="" />
-            <h3>press to open it.</h3>
+            <h2 data-aos="zoom-in">i have a message for u.</h2>
+            <img onclick="mulai()" src="img/mail-love.png" data-aos="zoom-in" style="cursor: pointer;" alt=""
+                srcset="" />
+            <div class="simply-countdown"></div>
+            <h3 data-aos="zoom-in">press to open it.</h3>
         </div>
     </div>
     <div class="atas" id="atas">
@@ -34,10 +39,6 @@
     <p data-aos="zoom-in">i hope this year will be better than last year.</p>
     <p data-aos="zoom-in">and also don't forget to always be given health and given a long life, so that you can make
         the people you love happy.</p>
-    <p data-aos="zoom-in">for the last time I just want to say, I love you, thank u for stay with me and also sorry this
-        gift from me is only
-        limited to this.
-    </p>
 
     <p data-aos="zoom-in">please press the heart button.
         <i onclick="tanya()" class="material-icons-sharp"> favorite </i>
@@ -45,6 +46,22 @@
 
     <script src="js/script.js"></script>
     <p class="wm"><span><a href="https://github.com/rivaannn">Copyright playwithshadow</a></span></p>
+
+    <!-- <script>
+        simplyCountdown('.simply-countdown', {
+            year: 2024, // required
+            month: 1, // required
+            day: 24, // required
+            hours: 8, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'detik', plural: 'detik' }
+            },
+        });
+
+    </script> -->
 </body>
 
 </html>
