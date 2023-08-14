@@ -26,7 +26,8 @@ function wa(isi) {
 }
 async function tanya() {
   var { value: kado } = await swal.fire({
-    title: "is there a message you want to convey to me?",
+    title:
+      "Is there a message you want to convey to me and what is the answer to the last question I asked?",
     input: "text",
     showCancelButton: false,
   });
