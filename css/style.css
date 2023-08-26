@@ -131,3 +131,31 @@ p.wm a {
     transform: scale(1) translateY(5px);
   }
 }
+
+.tombol-play {
+  background-color: #fdfbfb;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 20px 0;
+}
+
+.tombol-play:hover {
+  background-color: #575555;
+  transform: scale(1.05);
+}
+
+.tombol-play:active {
+  background-color: #928989;
+  transform: scale(0.95);
+}
+
+.tombol-play:focus {
+  outline: none;
+}

@@ -20,6 +20,7 @@
 </head>
 
 <body class="body">
+
     <audio class="audio" src="mp3/backsound.mp3" autoplay type="audio" loop=""></audio>
     <div class="open">
         <div class="card">
@@ -32,6 +33,12 @@
     </div>
     <div class="atas" id="atas">
         <img onclick="mulai()" src="img/stiker-ultah.png" alt="" />
+        <button onclick="toggleAudio()" class="tombol-play">Play/Stop Audio</button>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="path_ke_foto1.jpg" alt="Kenangan 1"></div>
+            <div class="item"><img src="path_ke_foto2.jpg" alt="Kenangan 2"></div>
+            <!-- Tambahkan item lainnya sesuai kebutuhan -->
+        </div>
         <h2>scroll down slowly okay ? </h2>
     </div>
 
@@ -73,6 +80,8 @@
         });
 
     </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/confetti.min.js"></script>
+
 </body>
 
 </html>
