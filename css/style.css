@@ -159,3 +159,49 @@ p.wm a {
 .tombol-play:focus {
   outline: none;
 }
+
+/* Existing Styles ... */
+
+/* Responsive styles for smartphone */
+@media (max-width: 768px) {
+  .open h2,
+  p {
+    font-size: 1.2em;
+    padding: 30px 20px;
+    margin: 20px 10px;
+  }
+
+  .open .card {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .open .card img {
+    height: 70px;
+  }
+
+  .atas img {
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+  }
+
+  .atas h2 {
+    font-size: 1.2em;
+    padding: 15px 20px;
+  }
+
+  .tombol-play {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  p.wm {
+    font-size: 0.8em;
+    margin-top: 50px;
+  }
+
+  .material-icons-sharp {
+    font-size: 24px;
+  }
+}
